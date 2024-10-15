@@ -98,9 +98,13 @@ Required Libraries
 To run the code, you'll need the following Python libraries:
 
 ● torchvision
+
 ● Pillow
+
 ● matplotlib
+
 ● torch
+
 ● opencv-python
 
 Video recording : 
