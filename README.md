@@ -56,18 +56,4 @@ Evaluation Criteria:
 ● Creativity in simulating AR overlays.
 ● Code efficiency and modularity.
 
-**Code Submission:**
-● Organize your code in a GitHub repository.
-● Include a README.md file with detailed instructions on setting up and executing each
-part.
-● Ensure that your code is clean, well-structured, and documented appropriately.
-● Include any necessary sample data or images required for testing the solutions.
-Demonstration Video:
-● Record a short video demonstrating the functionality of your solution.
-● For each section you solved, show the code in action and explain your approach.
-● Upload the video to a platform like YouTube (unlisted video) or Google Drive and provide
-the link in your submission.
 
-**Submission Details:**
-● Send the GitHub repository link and the video link to hr@fyndme.net.
-● Ensure that your submission is completed within one weeks of receiving this test.
