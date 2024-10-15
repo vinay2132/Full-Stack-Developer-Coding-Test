@@ -71,3 +71,105 @@ Evaluation Criteria:
 ● Code efficiency and modularity.
 
 
+Part - 1
+
+**Object Detection on Shelves with Faster R-CNN**
+
+**Installation**
+Prerequisites
+Before setting up the project, ensure you have the following:
+
+● Google Colab account or any Python environment with GPU support
+
+● Python 3.x installed
+
+● Access to your Google Drive (for saving and loading images)
+
+Required Libraries
+To run the code, you'll need the following Python libraries:
+
+● torchvision
+● Pillow
+● matplotlib
+● torch
+● opencv-python
+
+Video recording : 
+https://drive.google.com/file/d/125oNsBaoq1x-Ra5YvhbSlxvvAczxY1x6/view?usp=sharing 
+
+Part - 2
+**Product Management API**
+
+**Installation **
+
+**Prerequisites**
+Python 3.x
+Flask
+
+
+**API Endpoints **
+
+The API has the following endpoints:
+
+**GET /products**
+Retrieve the list of all products.
+
+● Method: GET
+● Response: JSON object containing a list of all products.
+
+
+**GET /products/<int:product_id> **
+Retrieve a specific product by its ID.
+
+● Method: GET
+● Parameters:
+   ● product_id (integer): The ID of the product.
+● Response: JSON object containing the product details.
+
+
+**POST /products**
+Add a new product to the list.
+
+● Method: POST
+● Request Body:
+   ● product_name (string): Name of the product (required).
+   ● product_cost (integer): Cost of the product (optional, default = 0).
+   ● product_value (integer): Value of the product (optional, default = 1).
+● Response: JSON object with the newly added product.
+
+
+**PUT /products/<int:product_id>**
+Update an existing product.
+
+● Method: PUT
+● Parameters:
+   ● product_id (integer): The ID of the product.
+● Request Body:
+   ● product_name (string): Updated name of the product (optional).
+   ● product_cost (integer): Updated cost of the product (optional).
+   ● product_value (integer): Updated value of the product (optional).
+● Response: JSON object with the updated product.
+
+
+**DELETE /products/<int:product_id>**
+Delete a product by its ID.
+
+● Method: DELETE
+● Parameters:
+   ● product_id (integer): The ID of the product to be deleted.
+● Response: JSON object with a deletion success message.
+
+Video Recording: 
+https://drive.google.com/file/d/1M04j6TzYq3d495a3OCFUXB6gWj7RsBjY/view?usp=sharing
+
+Part - 3
+**Object Detection with Augmented Reality (AR) Effects**
+
+**Installation
+
+Prerequisites**
+  Python 3.x
+  OpenCV (cv2)
+
+Video Recording: 
+https://drive.google.com/file/d/1qLcaXvTZxLbquHAWTs3mMFrXgw4JWkME/view?usp=sharing
