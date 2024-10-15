@@ -20,7 +20,9 @@ necessary instructions in a README.md file.
 **Part 1: Image Processing and Machine Learning with Python**
 Task: Develop a Python script using OpenCV and a pre-trained machine learning model to
 perform object detection on images of shelves.
+
 Requirements:
+
 ● Use OpenCV for image pre-processing (e.g., resizing, normalization).
 
 ● Leverage a pre-trained model like YOLO or Faster R-CNN for object detection.
@@ -28,6 +30,7 @@ Requirements:
 ● Output bounding box coordinates for detected products are provided in the sample images.
 
 Evaluation Criteria:
+
 ● Correct application of OpenCV for image processing.
 
 ● Implementation and integration of a pre-trained model for object detection.
@@ -37,7 +40,9 @@ Evaluation Criteria:
 **Part 2: Backend and API Development with Python**
 Task: Create a Flask-based RESTful API to manage a collection of product information,
 supporting operations for adding, retrieving, updating, and deleting records.
+
 Requirements:
+
 ● Store data in an in-memory structure for testing purposes.
 
 ● Implement endpoints with appropriate request/response formats and status codes.
@@ -55,6 +60,7 @@ Evaluation Criteria:
 **Part 3: Data Handling and Augmented Reality Integration**
 Task: Write a Python script to simulate the integration of detected objects with augmented
 reality by overlaying text on images.
+
 Requirements:
 
 ● Use OpenCV to draw bounding boxes and overlay text on images based on object
@@ -76,7 +82,9 @@ Part - 1
 **Object Detection on Shelves with Faster R-CNN**
 
 **Installation**
+
 Prerequisites
+
 Before setting up the project, ensure you have the following:
 
 ● Google Colab account or any Python environment with GPU support
@@ -86,6 +94,7 @@ Before setting up the project, ensure you have the following:
 ● Access to your Google Drive (for saving and loading images)
 
 Required Libraries
+
 To run the code, you'll need the following Python libraries:
 
 ● torchvision
