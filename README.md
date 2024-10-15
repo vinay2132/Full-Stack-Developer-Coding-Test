@@ -128,6 +128,7 @@ The API has the following endpoints:
 Retrieve the list of all products.
 
 ● Method: GET
+
 ● Response: JSON object containing a list of all products.
 
 
@@ -135,8 +136,11 @@ Retrieve the list of all products.
 Retrieve a specific product by its ID.
 
 ● Method: GET
+
 ● Parameters:
+
    ● product_id (integer): The ID of the product.
+
 ● Response: JSON object containing the product details.
 
 
@@ -144,10 +148,15 @@ Retrieve a specific product by its ID.
 Add a new product to the list.
 
 ● Method: POST
+
 ● Request Body:
+
    ● product_name (string): Name of the product (required).
+   
    ● product_cost (integer): Cost of the product (optional, default = 0).
+   
    ● product_value (integer): Value of the product (optional, default = 1).
+
 ● Response: JSON object with the newly added product.
 
 
@@ -155,12 +164,19 @@ Add a new product to the list.
 Update an existing product.
 
 ● Method: PUT
+
 ● Parameters:
+   
    ● product_id (integer): The ID of the product.
+
 ● Request Body:
+
    ● product_name (string): Updated name of the product (optional).
+   
    ● product_cost (integer): Updated cost of the product (optional).
+   
    ● product_value (integer): Updated value of the product (optional).
+
 ● Response: JSON object with the updated product.
 
 
@@ -168,8 +184,11 @@ Update an existing product.
 Delete a product by its ID.
 
 ● Method: DELETE
+
 ● Parameters:
+
    ● product_id (integer): The ID of the product to be deleted.
+
 ● Response: JSON object with a deletion success message.
 
 Video Recording: 
@@ -181,7 +200,9 @@ Part - 3
 **Installation
 
 Prerequisites**
+  
   Python 3.x
+  
   OpenCV (cv2)
 
 Video Recording: 
