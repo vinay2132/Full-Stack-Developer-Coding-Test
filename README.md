@@ -22,12 +22,16 @@ Task: Develop a Python script using OpenCV and a pre-trained machine learning mo
 perform object detection on images of shelves.
 Requirements:
 ● Use OpenCV for image pre-processing (e.g., resizing, normalization).
+
 ● Leverage a pre-trained model like YOLO or Faster R-CNN for object detection.
-● Output bounding box coordinates for detected products are provided in the sample
-images.
+
+● Output bounding box coordinates for detected products are provided in the sample images.
+
 Evaluation Criteria:
 ● Correct application of OpenCV for image processing.
+
 ● Implementation and integration of a pre-trained model for object detection.
+
 ● Code quality, readability, and documentation.
 
 **Part 2: Backend and API Development with Python**
@@ -35,25 +39,34 @@ Task: Create a Flask-based RESTful API to manage a collection of product informa
 supporting operations for adding, retrieving, updating, and deleting records.
 Requirements:
 ● Store data in an in-memory structure for testing purposes.
+
 ● Implement endpoints with appropriate request/response formats and status codes.
+
 ● Ensure the API is capable of handling concurrent requests gracefully.
 
 Evaluation Criteria:
 ● API design, structure, and documentation.
+
 ● Implementation of CRUD operations.
+
 ● Error handling and response formatting.
 
 **Part 3: Data Handling and Augmented Reality Integration**
 Task: Write a Python script to simulate the integration of detected objects with augmented
 reality by overlaying text on images.
 Requirements:
+
 ● Use OpenCV to draw bounding boxes and overlay text on images based on object
 detection results from Part 1.
+
 ● Simulate a simple AR effect by adding basic animations or effects using OpenCV (e.g.,
 changing colors, adding simple graphics).
 Evaluation Criteria:
+
 ● Effective manipulation of images using OpenCV.
+
 ● Creativity in simulating AR overlays.
+
 ● Code efficiency and modularity.
 
 
