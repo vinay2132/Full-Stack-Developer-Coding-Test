@@ -112,7 +112,7 @@ To set up the environment for any part of the test, ensure you have the required
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repo/full-stack-developer-coding-test.git
+   git clone https://github.com/vinay2132/full-stack-developer-coding-test.git
    cd full-stack-developer-coding-test
    ```
 
