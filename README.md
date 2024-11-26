@@ -1,209 +1,157 @@
-# Full-Stack-Developer-Coding-Test
+```markdown
+# Full Stack Developer Coding Test
+
+This repository contains solutions for the Full Stack Developer Coding Test. The test is divided into three parts, each focusing on different aspects of full-stack development:
+
+1. **Image Processing and Machine Learning**  
+2. **Backend and API Development**  
+3. **Data Handling and Augmented Reality Integration**
 
-Note to Candidates: We understand that each candidate may have varying levels of expertise
-in different areas of the test. Please feel free to focus on the sections where you feel most
-confident in showcasing your skills. You are welcome to solve one or more parts of the problem
-based on your strengths and expertise. The solutions provided are examples for reference, and
-you are encouraged to use your preferred methods and tools to achieve the objectives.
+Candidates are encouraged to complete one or more sections based on their strengths and expertise. Each part has been implemented to meet the specified requirements and includes detailed documentation for understanding and usage.
 
-Sections:
-Part 1: Image Processing and Machine Learning
-Part 2: Backend and API Development
-Part 3: Data Handling and Augmented Reality Integration
-You can choose to solve any or all parts of the test. Completing multiple sections may provide
-more comprehensive insights into your capabilities, but we value the depth and quality of
-solutions over quantity.
-Submission Timeline: You have one week from receiving this test to complete and submit your
-solutions. Please ensure that your code is well-documented and organized, and include any
-necessary instructions in a README.md file.
+---
 
-**Part 1: Image Processing and Machine Learning with Python**
-Task: Develop a Python script using OpenCV and a pre-trained machine learning model to
-perform object detection on images of shelves.
+## Table of Contents
+- [Part 1: Image Processing and Machine Learning](#part-1-image-processing-and-machine-learning)
+- [Part 2: Backend and API Development](#part-2-backend-and-api-development)
+- [Part 3: Data Handling and Augmented Reality Integration](#part-3-data-handling-and-augmented-reality-integration)
+- [Installation](#installation)
+- [Video Demonstrations](#video-demonstrations)
 
-Requirements:
+---
+
+## Part 1: Image Processing and Machine Learning
+
+**Task:** Perform object detection on images of shelves using a pre-trained machine learning model.
+
+### Requirements
+- Use OpenCV for image pre-processing (e.g., resizing, normalization).
+- Leverage a pre-trained model like YOLO or Faster R-CNN for object detection.
+- Output bounding box coordinates for detected products in sample images.
+
+### Features
+- Correct application of OpenCV for image pre-processing.
+- Integration of Faster R-CNN for object detection.
+- Code is modular, well-documented, and easy to understand.
+
+### Prerequisites
+- Google Colab account or any Python environment with GPU support.
+- Python 3.x installed.
+- Access to Google Drive for saving and loading images.
+
+### Required Libraries
+- `torch`
+- `torchvision`
+- `Pillow`
+- `matplotlib`
+- `opencv-python`
 
-● Use OpenCV for image pre-processing (e.g., resizing, normalization).
+---
 
-● Leverage a pre-trained model like YOLO or Faster R-CNN for object detection.
+## Part 2: Backend and API Development
 
-● Output bounding box coordinates for detected products are provided in the sample images.
+**Task:** Create a Flask-based RESTful API to manage product information with CRUD operations.
 
-Evaluation Criteria:
+### API Endpoints
+1. **`GET /products`**  
+   Retrieve the list of all products.  
+   **Response:** JSON object containing all products.
 
-● Correct application of OpenCV for image processing.
+2. **`GET /products/<int:product_id>`**  
+   Retrieve a specific product by its ID.  
+   **Response:** JSON object with product details.
 
-● Implementation and integration of a pre-trained model for object detection.
+3. **`POST /products`**  
+   Add a new product.  
+   **Request Body:**
+   ```json
+   {
+     "product_name": "string",
+     "product_cost": "integer (optional, default=0)",
+     "product_value": "integer (optional, default=1)"
+   }
+   ```  
+   **Response:** JSON object of the newly added product.
 
-● Code quality, readability, and documentation.
+4. **`PUT /products/<int:product_id>`**  
+   Update an existing product by ID.  
+   **Request Body:**
+   ```json
+   {
+     "product_name": "string (optional)",
+     "product_cost": "integer (optional)",
+     "product_value": "integer (optional)"
+   }
+   ```  
+   **Response:** JSON object with the updated product.
 
-**Part 2: Backend and API Development with Python**
-Task: Create a Flask-based RESTful API to manage a collection of product information,
-supporting operations for adding, retrieving, updating, and deleting records.
+5. **`DELETE /products/<int:product_id>`**  
+   Delete a product by its ID.  
+   **Response:** JSON object with a success message.
 
-Requirements:
+---
 
-● Store data in an in-memory structure for testing purposes.
+## Part 3: Data Handling and Augmented Reality Integration
 
-● Implement endpoints with appropriate request/response formats and status codes.
+**Task:** Simulate AR integration by overlaying text and effects on detected objects in images.
 
-● Ensure the API is capable of handling concurrent requests gracefully.
+### Features
+- Use OpenCV to draw bounding boxes around detected objects.
+- Overlay text on images based on detection results.
+- Add AR-style visual effects such as dynamic color changes or semi-transparent graphics.
 
-Evaluation Criteria:
+### Prerequisites
+- Python 3.x installed.
+- OpenCV library (`cv2`).
 
-● API design, structure, and documentation.
+---
 
-● Implementation of CRUD operations.
+## Installation
 
-● Error handling and response formatting.
+To set up the environment for any part of the test, ensure you have the required libraries installed:
 
-**Part 3: Data Handling and Augmented Reality Integration**
-Task: Write a Python script to simulate the integration of detected objects with augmented
-reality by overlaying text on images.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-repo/full-stack-developer-coding-test.git
+   cd full-stack-developer-coding-test
+   ```
 
-Requirements:
+2. Install dependencies for each part:
+   - **Part 1:**
+     ```bash
+     pip install torch torchvision Pillow matplotlib opencv-python
+     ```
+   - **Part 2:**
+     ```bash
+     pip install flask
+     ```
+   - **Part 3:**
+     ```bash
+     pip install opencv-python
+     ```
 
-● Use OpenCV to draw bounding boxes and overlay text on images based on object
-detection results from Part 1.
+3. Follow the instructions in the respective sections to run the code.
 
-● Simulate a simple AR effect by adding basic animations or effects using OpenCV (e.g.,
-changing colors, adding simple graphics).
-Evaluation Criteria:
+---
 
-● Effective manipulation of images using OpenCV.
+## Video Demonstrations
 
-● Creativity in simulating AR overlays.
+- **Part 1: Object Detection on Shelves with Faster R-CNN**  
+  [Watch Video](https://drive.google.com/file/d/125oNsBaoq1x-Ra5YvhbSlxvvAczxY1x6/view?usp=sharing)
 
-● Code efficiency and modularity.
+- **Part 2: Product Management API**  
+  [Watch Video](https://drive.google.com/file/d/1M04j6TzYq3d495a3OCFUXB6gWj7RsBjY/view?usp=sharing)
 
+- **Part 3: Object Detection with Augmented Reality (AR) Effects**  
+  [Watch Video](https://drive.google.com/file/d/1qLcaXvTZxLbquHAWTs3mMFrXgw4JWkME/view?usp=sharing)
 
-Part - 1
+---
 
-**Object Detection on Shelves with Faster R-CNN**
+## Notes
 
-**Installation**
+- Each section is independent, and you can run them separately based on your interests and expertise.
+- Ensure your environment meets the prerequisites for the section you wish to run.
 
-Prerequisites
-
-Before setting up the project, ensure you have the following:
-
-● Google Colab account or any Python environment with GPU support
-
-● Python 3.x installed
-
-● Access to your Google Drive (for saving and loading images)
-
-Required Libraries
-
-To run the code, you'll need the following Python libraries:
-
-● torchvision
-
-● Pillow
-
-● matplotlib
-
-● torch
-
-● opencv-python
-
-Video recording : 
-https://drive.google.com/file/d/125oNsBaoq1x-Ra5YvhbSlxvvAczxY1x6/view?usp=sharing 
-
-Part - 2
-**Product Management API**
-
-**Installation **
-
-**Prerequisites**
-Python 3.x
-Flask
-
-
-**API Endpoints **
-
-The API has the following endpoints:
-
-**GET /products**
-Retrieve the list of all products.
-
-● Method: GET
-
-● Response: JSON object containing a list of all products.
-
-
-**GET /products/<int:product_id> **
-Retrieve a specific product by its ID.
-
-● Method: GET
-
-● Parameters:
-
-   ● product_id (integer): The ID of the product.
-
-● Response: JSON object containing the product details.
-
-
-**POST /products**
-Add a new product to the list.
-
-● Method: POST
-
-● Request Body:
-
-   ● product_name (string): Name of the product (required).
-   
-   ● product_cost (integer): Cost of the product (optional, default = 0).
-   
-   ● product_value (integer): Value of the product (optional, default = 1).
-
-● Response: JSON object with the newly added product.
-
-
-**PUT /products/<int:product_id>**
-Update an existing product.
-
-● Method: PUT
-
-● Parameters:
-   
-   ● product_id (integer): The ID of the product.
-
-● Request Body:
-
-   ● product_name (string): Updated name of the product (optional).
-   
-   ● product_cost (integer): Updated cost of the product (optional).
-   
-   ● product_value (integer): Updated value of the product (optional).
-
-● Response: JSON object with the updated product.
-
-
-**DELETE /products/<int:product_id>**
-Delete a product by its ID.
-
-● Method: DELETE
-
-● Parameters:
-
-   ● product_id (integer): The ID of the product to be deleted.
-
-● Response: JSON object with a deletion success message.
-
-Video Recording: 
-https://drive.google.com/file/d/1M04j6TzYq3d495a3OCFUXB6gWj7RsBjY/view?usp=sharing
-
-Part - 3
-**Object Detection with Augmented Reality (AR) Effects**
-
-**Installation
-
-Prerequisites**
-  
-  Python 3.x
-  
-  OpenCV (cv2)
-
-Video Recording: 
-https://drive.google.com/file/d/1qLcaXvTZxLbquHAWTs3mMFrXgw4JWkME/view?usp=sharing
+**Author:** Daram Vinay
+**Contact:** [your-daramvinay12@gmail.com](mailto:daramvinay12@gmail.com)  
+```
