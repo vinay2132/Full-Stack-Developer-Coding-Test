@@ -1,4 +1,4 @@
-```markdown
+
 # Full Stack Developer Coding Test
 
 This repository contains solutions for the Full Stack Developer Coding Test. The test is divided into three parts, each focusing on different aspects of full-stack development:
